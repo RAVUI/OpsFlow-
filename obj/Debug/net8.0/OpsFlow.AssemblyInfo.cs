@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("OpsFlow")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0eb18593ca3cb5eeab0df979d46280430e000bb4")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+db06b501b79481e64d358d238b354507bbdc272f")]
 [assembly: System.Reflection.AssemblyProductAttribute("OpsFlow")]
 [assembly: System.Reflection.AssemblyTitleAttribute("OpsFlow")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
