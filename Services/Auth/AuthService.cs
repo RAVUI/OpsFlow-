@@ -115,15 +115,14 @@ public class AuthService : IAuthService
                 "Invalid email or password.");
         }
 
-        // Get employee profile
-        var employeeResponse = await _supabase
-            .From<Employee>()
-            .Where(x =>
-                x.UserId == session.User.Id)
-            .Get();
+        if (string.IsNullOrWhiteSpace(session.User.Id))
+        {
+            throw new Exception(
+                "Supabase user ID was not returned.");
 
-        var employee =
-            employeeResponse.Models.FirstOrDefault();
+        }
+
+   
 
         if (employee == null)
         {
