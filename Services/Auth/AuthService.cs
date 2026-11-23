@@ -107,7 +107,7 @@ public class AuthService : IAuthService
         // Login through Supabase
         var session = await _supabase.Auth.SignIn(
             request.Email,
-            request.Password);
+            request.Password ,request.Number);
 
         if (session?.User == null)
         {
